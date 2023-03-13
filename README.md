@@ -1,5 +1,7 @@
+The quantum circuit is constructed using qiskit and compares any two given integers (positive or negative).
 The logic of the quantum circuit is as follows: <br>
 QUBIT_SIZE = 3 <br>
+This logic uses the classical states and works for any numbers in the range [-2^(QUBIT_SIZE-1), 2^(QUBIT_SIZE-1)-1]. <br>
 Consider two integers (positive or negative) num1 and num2. <br>
 To illustrate with an example, say num1 = 3 and num2 = -2. <br>
 2’s complement of 3 in 3-bit representation is 011. It is stored in int1 quantum register. <br>
@@ -27,7 +29,6 @@ meas_OR_int2bits = 0 <br>
 If the measured value is ‘0 1’, then it means that OR_int1bits = 1 and OR_int2bits = 0 and hence, num2 is higher. <br>
 If the measured value is ‘0 0’, then it means that both numbers are equal. <br>
 Therefore, for our case, num1 (i.e. 3) is higher. <br>
-This logic uses the classical states and works for any numbers in the range [-2^(QUBIT_SIZE-1), 2^(QUBIT_SIZE-1)-1]. <br>
 
 
 
